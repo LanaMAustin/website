@@ -26,9 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 h1 { 
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   font-weight: 700;
   color: #111d13;
+  margin-bottom: 0.5rem;
 }
 h2 { font-size: 2.8rem; }
 h3 { font-size: 2.2rem; }
@@ -48,7 +49,12 @@ a:hover {
 /* -----------------------------------------------------
    Layout Containers
 ------------------------------------------------------ */
-header,
+header {
+  background: #a1cca5; /* celadon */
+  padding: 40px 25px 25px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 #content,
 footer {
   background: #a1cca5; /* celadon */
@@ -59,67 +65,89 @@ footer {
 /* -----------------------------------------------------
    Header Layout
 ------------------------------------------------------ */
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-/* top row: name + image */
+/* top row: centered text on left, image on right */
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
-/* larger profile pic for laptop/desktop */
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #415d43;
+  margin: 0.8rem 0 1.5rem 0;
+  font-weight: 400;
+}
+
+/* Profile pic on right */
 .profile-pic {
-  width: 350px;
+  width: 300px;
   height: auto;
   border-radius: 8px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
-/* Social media icons */
+
+/* Social media icons - horizontal row */
 .social-links {
   display: flex;
-  gap: 12px;
-  margin-top: 8px;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
 }
 .social-links a {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #415d43;
   transition: color 0.3s ease;
 }
 .social-links a:hover {
   color: #111d13;
 }
+
 /* Mobile: stack header column-wise */
 @media (max-width: 600px) {
   .header-top {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+  }
+  .header-text {
+    text-align: center;
+    margin-bottom: 20px;
   }
   .profile-pic {
-    margin: 10px 0 0 0;
-    width: 140px;
+    margin: 0;
+    width: 200px;
   }
 }
 /* -----------------------------------------------------
-   Navigation Menu
+   Navigation Menu - integrated with header
 ------------------------------------------------------ */
 ul.main-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(65, 93, 67, 0.2);
 }
 ul.main-menu li a {
   font-size: 1.8rem;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
-ul.main-menu li a.active {
-  border-bottom-color: #709775; /* sage green */
+ul.main-menu li a.active,
+ul.main-menu li a:hover {
+  border-bottom-color: #415d43;
   color: #111d13;
 }
 /* -----------------------------------------------------
