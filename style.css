@@ -1,12 +1,10 @@
 /* -----------------------------------------------------
    Base Typography
 ------------------------------------------------------ */
-
 html {
   font-size: 62.5%;
   background: #f5f9f5; /* soft green background */
 }
-
 body {
   font-size: 1.5rem;
   line-height: 1.6;
@@ -17,11 +15,9 @@ body {
   margin: 25px auto;
   padding: 0 15px;
 }
-
 /* -----------------------------------------------------
    Headings
 ------------------------------------------------------ */
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin: 0 0 1.8rem 0;
@@ -29,32 +25,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #415d43; /* Hunter Green */
   text-rendering: optimizeLegibility;
 }
-
 h1 { font-size: 3.4rem; }
 h2 { font-size: 2.8rem; }
 h3 { font-size: 2.2rem; }
-
 /* -----------------------------------------------------
    Text & Links
 ------------------------------------------------------ */
-
 p {
   margin: 0 0 1.5rem 0;
 }
-
 a {
   text-decoration: none;
   color: #415d43;
 }
-
 a:hover {
   color: #111d13;
 }
-
 /* -----------------------------------------------------
    Layout Containers
 ------------------------------------------------------ */
-
 header,
 #content,
 footer {
@@ -63,49 +52,55 @@ footer {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 /* -----------------------------------------------------
    Header Layout
 ------------------------------------------------------ */
-
 header {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 /* top row: name + image */
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* smaller right-aligned profile pic */
+/* larger profile pic for laptop/desktop */
 .profile-pic {
-  width: 120px;
+  width: 200px;
   height: auto;
   border-radius: 8px;
   margin-left: 20px;
 }
-
+/* Social media icons */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.social-links a {
+  font-size: 2.4rem;
+  color: #415d43;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: #111d13;
+}
 /* Mobile: stack header column-wise */
 @media (max-width: 600px) {
   .header-top {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .profile-pic {
     margin: 10px 0 0 0;
     width: 140px;
   }
 }
-
 /* -----------------------------------------------------
    Navigation Menu
 ------------------------------------------------------ */
-
 ul.main-menu {
   display: flex;
   flex-wrap: wrap;
@@ -114,47 +109,38 @@ ul.main-menu {
   padding: 0;
   margin: 0;
 }
-
 ul.main-menu li a {
   font-size: 1.8rem;
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
 }
-
 ul.main-menu li a.active {
   border-bottom-color: #709775; /* sage green */
   color: #111d13;
 }
-
 /* -----------------------------------------------------
    Utility Show/Hide
 ------------------------------------------------------ */
-
 .hide { display: none; }
 .show { display: block; }
-
 /* -----------------------------------------------------
    Photo Gallery
 ------------------------------------------------------ */
-
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
-
 .photo-grid img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
-
 /* -----------------------------------------------------
    Footer
 ------------------------------------------------------ */
-
 footer {
   text-align: center;
   font-size: 1.4rem;
