@@ -68,7 +68,7 @@ header {
 }
 /* larger profile pic for laptop/desktop */
 .profile-pic {
-  width: 200px;
+  width: 300px;
   height: auto;
   border-radius: 8px;
   margin-left: 20px;
