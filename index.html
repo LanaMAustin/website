@@ -1,121 +1,159 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <!-- Page setup -->
     <meta charset="utf-8">
     <title>Lana M Austin - Ecologist</title>
-    <meta name="description" content="Ecologist specializing in bird conservation and community engagement">
+
+    <meta name="description" content="Ecologist specialising in bird conservation and community engagement.">
     <meta name="author" content="Lana M Austin">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
+
+    <!-- Fonts & normalisation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
     <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet">
+
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
-  
+
   <body>
+
+    <!-- ---------------- HEADER ---------------- -->
     <header id="header">
-      <img src="profile.jpg">  #image at the top
-      <h1>Lana M Austin</h1>  #heading 1
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#about"> links to <div id="about"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#about">about</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#resume">resume</a></li>
-        <li><a href="#photos">photos</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="about" class="content-region hide">
-            <h2>about</h2>
-            <p>
-              I am an ecologist that loves birds. I work hard to conserve threatened species, and keep communities connected with the birds in their backyards.
-            </p>
-          </div>
-          
-          <div id="projects" class="content-region hide">
-            <h2>Projects</h2>
-            <p>
-              Here are some of my current and past projects in bird conservation and community engagement.
-            </p>
-            <h3>Current Research</h3>
-            <p>
-              [Add your current project details here]
-            </p>
-            <h3>Community Programs</h3>
-            <p>
-              [Add your community program details here]
-            </p>
-          </div>
-          
-          <div id="resume" class="content-region hide">
-            <h2>resume</h2>
-            </p>
-            <h3>experience</h3>
-            <p>
-              [Add your work experience here]
-            <h3>education</h3>
-            <p>
-              [Add your education details here]
-            </p>
-            <h3>publications</h3>
-            <p>
-              Austin, L. M., Amos, J. N., Robledo‐Ruiz, D. A., Zhou, J. W., Clarke, R. H., Pavlova, A., & Sunnucks, P. (2025). Random Mating in a Hybrid Zone Between Two Putative Climate‐Adapted Bird Lineages With Predicted Mitonuclear Incompatibilities. Molecular Ecology, 34(2), e17612.
-          Low, G.W., Pavlova, A., Gan, H.M., Ko, M.C., Sadanandan, K.R., Lee, Y.P., Amos, J.N., Austin, L., Falk, S., Dowling, D.K. and Sunnucks, P., 2024. Accelerated differentiation of neo-W nuclear-encoded mitochondrial genes between two climate-associated bird lineages signals potential co-evolution with mitogenomes. Heredity, 133(5), pp.342-354.
-            Robledo‐Ruiz, D.A., Austin, L., Amos, J.N., Castrejón‐Figueroa, J., Harley, D.K., Magrath, M.J., Sunnucks, P. and Pavlova, A., 2025. Easy‐to‐use R functions to separate reduced‐representation genomic datasets into sex‐linked and autosomal loci, and conduct sex assignment. Molecular Ecology Resources, 25(5), p.e13844.
-           Kvistad, L., Falk, S. and Austin, L., 2022. Widespread genomic signatures of reproductive isolation and sex-specific selection in the Eastern Yellow Robin, Eopsaltria australis. G3, 12(9), p.jkac145.
-           Shields, J. and Austin, L.M., 2018. Monitoring invasive and threatened aquatic amphibians, mammals, and birds. In Using detection dogs to monitor aquatic ecosystem health and protect aquatic resources (pp. 71-117). Cham: Springer International Publishing.
-            </p>
-          </div>
-          
-          <div id="photos" class="content-region hide">
-            <h2>Photos</h2>
-            <p>
-              Here's some photos of me doing things in the bush, sometimes for work, sometimes for play.            </p>
-            <div class="photo-grid">
-              <!-- Add your photos here. Example format: -->
-              <!-- <img src="bird1.jpg" alt="Description of bird photo"> -->
-              <!-- <img src="fieldwork1.jpg" alt="Fieldwork in location"> -->
-              <p>[Upload your photos to the repository and add them here]</p>
-            </div>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Get in touch to discuss bird conservation, research collaborations, or community programs.
-            </p>
-            <p>
-              Email: [your email]<br>
-              LinkedIn: [your LinkedIn]<br>
-              Twitter: [your Twitter]
-            </p>
-          </div>
-          
-        </div>
+
+      <div class="header-top">
+        <h1>Lana M Austin</h1>
+        <img class="profile-pic" src="profile.jpg" alt="Profile of Lana Austin">
       </div>
+
+      <ul class="main-menu">
+        <li><a href="#about" class="menu-link">about</a></li>
+        <li><a href="#projects" class="menu-link">projects</a></li>
+        <li><a href="#resume" class="menu-link">resume</a></li>
+        <li><a href="#photos" class="menu-link">photos</a></li>
+        <li><a href="#contact" class="menu-link">contact</a></li>
+      </ul>
+
+    </header>
+
+
+    <!-- ---------------- CONTENT ---------------- -->
+    <div id="content">
+
+      <!-- ABOUT -->
+      <section id="about" class="content-region show">
+        <h2>About</h2>
+        <p>
+          I am an ecologist who loves birds. I work to conserve threatened species 
+          and help keep communities connected with the birds in their backyards.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="content-region hide">
+        <h2>Projects</h2>
+
+        <h3>Current Research</h3>
+        <p>[Add your current research details here.]</p>
+
+        <h3>Community Programs</h3>
+        <p>[Add your community engagement details here.]</p>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="content-region hide">
+        <h2>Resume</h2>
+
+        <h3>Experience</h3>
+        <p>[Add your work experience here]</p>
+
+        <h3>Education</h3>
+        <p>[Add your education details here]</p>
+
+        <h3>Publications</h3>
+        <p>
+          Austin, L. M., Amos, J. N., Robledo‐Ruiz, D. A., Zhou, J. W., Clarke, R. H., Pavlova, A., & Sunnucks, P. (2025). 
+          Random Mating in a Hybrid Zone Between Two Putative Climate‐Adapted Bird Lineages With Predicted Mitonuclear 
+          Incompatibilities. <em>Molecular Ecology</em>, 34(2), e17612.
+        </p>
+        <p>
+          Low, G.W., Pavlova, A., Gan, H.M., Ko, M.C., Sadanandan, K.R., Lee, Y.P., Amos, J.N., Austin, L., Falk, S., Dowling, D.K. 
+          and Sunnucks, P. (2024). Accelerated differentiation of neo-W nuclear-encoded mitochondrial genes between two 
+          climate-associated bird lineages signals potential co-evolution with mitogenomes. <em>Heredity</em>, 133(5), 342–354.
+        </p>
+        <p>
+          Robledo‐Ruiz, D.A., Austin, L., Amos, J.N., Castrejón‐Figueroa, J., Harley, D.K., Magrath, M.J., Sunnucks, P. and 
+          Pavlova, A. (2025). Easy‐to‐use R functions to separate reduced‐representation genomic datasets into sex‐linked and 
+          autosomal loci, and conduct sex assignment. <em>Molecular Ecology Resources</em>, 25(5), e13844.
+        </p>
+        <p>
+          Kvistad, L., Falk, S. and Austin, L. (2022). Widespread genomic signatures of reproductive isolation and sex-specific 
+          selection in the Eastern Yellow Robin, <em>Eopsaltria australis</em>. <em>G3</em>, 12(9), jkac145.
+        </p>
+        <p>
+          Shields, J. & Austin, L.M. (2018). Monitoring invasive and threatened aquatic amphibians, mammals, and birds. 
+          In <em>Using detection dogs to monitor aquatic ecosystem health and protect aquatic resources</em> (pp. 71–117). Springer.
+        </p>
+      </section>
+
+      <!-- PHOTOS -->
+      <section id="photos" class="content-region hide">
+        <h2>Photos</h2>
+        <p>Here are some photos of me doing fieldwork, birding, or enjoying the bush.</p>
+
+        <div class="photo-grid">
+          <!-- Add photo files to your repo and list them here -->
+          <!-- Example:
+          <img src="photo1.jpg" alt="Fieldwork in Tasmania">
+          <img src="photo2.jpg" alt="Swift parrot survey">
+          <img src="photo3.jpg" alt="Bird banding station">
+          -->
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="content-region hide">
+        <h2>Contact</h2>
+        <p>Get in touch to discuss bird conservation, research or collaborations.</p>
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: [your link]</p>
+      </section>
+
     </div>
-    <footer>  
-      © 2024 Lana M Austin | Ecologist & Bird Conservation Specialist
+
+
+    <!-- ---------------- FOOTER ---------------- -->
+    <footer>
+      © 2024–2025 Lana M Austin | Ecologist & Bird Conservation Specialist
     </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
+
+
+    <!-- ---------------- JS: Navigation Logic ---------------- -->
+    <script>
+      $(document).ready(function () {
+
+        // Switch visible section
+        $(".menu-link").click(function (e) {
+          e.preventDefault();
+
+          // hide all sections
+          $(".content-region").addClass("hide").removeClass("show");
+
+          // show selected
+          const target = $(this).attr("href");
+          $(target).removeClass("hide").addClass("show");
+
+          // update menu status
+          $(".menu-link").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
   </body>
 </html>
