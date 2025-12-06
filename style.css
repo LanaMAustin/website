@@ -64,11 +64,11 @@ header {
 .header-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 /* larger profile pic for laptop/desktop */
 .profile-pic {
-  width: 300px;
+  width: 200px;
   height: auto;
   border-radius: 8px;
   margin-left: 20px;
