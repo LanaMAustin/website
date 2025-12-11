@@ -156,6 +156,64 @@ ul.main-menu li a:hover {
 .hide { display: none; }
 .show { display: block; }
 /* -----------------------------------------------------
+   Project Boxes
+------------------------------------------------------ */
+.project-box {
+  background: #a1cca5; /* celadon - same as header */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.project-image {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-credit {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #415d43;
+  margin: 5px 0 0 0;
+  opacity: 0.8;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text h3 {
+  margin-top: 0;
+}
+
+.project-text-only {
+  width: 100%;
+}
+
+.project-text-only h3 {
+  margin-top: 0;
+}
+
+/* Mobile: stack project boxes */
+@media (max-width: 600px) {
+  .project-box {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+  }
+}
+/* -----------------------------------------------------
    Photo Gallery
 ------------------------------------------------------ */
 .photo-grid {
